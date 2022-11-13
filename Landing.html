@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loaner</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(196, 232, 244);
+
+        /* background-image: url(./img1.png); */
+        display: flex;
+      }
+      .welcome {
+        position: absolute;
+        left: 17.2%;
+        right: 15.15%;
+        top: 17.62%;
+        bottom: 66.6%;
+
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 116px;
+        text-align: center;
+
+        color: #226c8f;
+      }
+      .signup {
+        position: absolute;
+        left: 15.61%;
+        right: 59.85%;
+        top: 47.05%;
+        bottom: 28.31%;
+        padding: auto;
+        background: #fcfdd2;
+        opacity: 0.75;
+        border-radius: 15px;
+      }
+      .login {
+        position: absolute;
+        left: 62.17%;
+        right: 13.29%;
+        top: 47.05%;
+        bottom: 28.31%;
+
+        background: #fcfdd2;
+        opacity: 0.75;
+        border-radius: 15px;
+      }
+      .signup > h3, .login > h3 {
+        position: absolute;
+        left: 24.18%;
+        right: 63.69%;
+        top: 12.69%;
+        bottom: 45.42%;
+        width: max-content;
+        /* font-family: "Jost"; */
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        /* line-height: 52px; */
+        text-align: center;
+
+        color: #63bdff;
+      }
+      .login{
+        justify-items: center;
+      }
+      .createacct {
+        position: absolute;
+        left: 28.44%;
+        right: 65.48%;
+        top: 55.18%;
+        bottom: 33.4%;
+        padding: 20px;
+        height: max-content;
+        width: max-content;
+        background: #77eeaa;
+        border-radius: 10px;
+        border: none;
+        justify-self: center;
+      }
+      .loginbtn{
+        position: absolute;
+        left: 34.44%;
+        right: 65.48%;
+        top: 55.18%;
+        bottom: 33.4%;
+        padding: 17px;
+        height: max-content;
+        width: 110px;
+        background: #77eeaa;
+        border-radius: 10px;
+        border: none;
+        justify-self: center; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="./img1.png"
+        alt=""
+        style="height: 100vh; width: 100vw; position: fixed; opacity: 50%"
+      />
+      <div class="welcome">
+        <h2>Welcome to Loaner</h2>
+      </div>
+      <div class="container2">
+        <div class="signup">
+          <h3>For New Users</h3>
+          <a href="./login.php">
+
+              <button class="createacct"><h3>
+                  Create Account
+                </h3>
+            </button>
+        </a>
+        </div>
+        <div class="login">
+            <h3>For Existing Users</h3>
+            <a href="./login.php">
+
+                <button class="loginbtn"><h3>
+                    Login
+                  </h3>
+              </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
